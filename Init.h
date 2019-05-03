@@ -2,7 +2,7 @@
 #include<time.h>
 #include <windows.h>
 #include<stdlib.h>
-#include<conio.h>
+#include<conio.h>//kbhit 遇到kbhit不会停  与getch()区别
 /*********宏定义区**************/
 
 #define FOOD 1
@@ -106,7 +106,7 @@ void Init(){
 //判断键盘输入
 
 wait:
-if(_kbhit()){
+if(kbhit()){
 	if((ch=getchar())=='1'){
 			createSnake();
 	}
@@ -215,7 +215,7 @@ createFood();
 //判断有没有方向键输入
 void directSelect(){
 	char ch;
-		if(_kbhit()){
+		if(kbhit()){
 		ch = getch();
 	
 		switch(ch){
@@ -395,7 +395,7 @@ void gameOver(){
 	char ch;
 //延时1s后清除屏幕
 	setColor(4,7);
-	Sleep(1000);
+	Sleep(500);
 	system("cls");
 
     setPos(40, 12);

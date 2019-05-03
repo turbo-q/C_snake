@@ -6,18 +6,18 @@
 --------------------Configuration: C_snake - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\п║╦жез\AppData\Local\Temp\RSPC170.tmp" with contents
+Creating temporary file "C:\Users\п║╦жез\AppData\Local\Temp\RSP297C.tmp" with contents
 [
 /nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/C_snake.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
 "G:\GitHub\C_snake\C_snake\main.c"
 ]
-Creating command line "cl.exe @"C:\Users\п║╦жез\AppData\Local\Temp\RSPC170.tmp"" 
-Creating temporary file "C:\Users\п║╦жез\AppData\Local\Temp\RSPC171.tmp" with contents
+Creating command line "cl.exe @"C:\Users\п║╦жез\AppData\Local\Temp\RSP297C.tmp"" 
+Creating temporary file "C:\Users\п║╦жез\AppData\Local\Temp\RSP297D.tmp" with contents
 [
 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/C_snake.pdb" /debug /machine:I386 /out:"Debug/C_snake.exe" /pdbtype:sept 
 .\Debug\main.obj
 ]
-Creating command line "link.exe @"C:\Users\п║╦жез\AppData\Local\Temp\RSPC171.tmp""
+Creating command line "link.exe @"C:\Users\п║╦жез\AppData\Local\Temp\RSP297D.tmp""
 <h3>Output Window</h3>
 Compiling...
 main.c
