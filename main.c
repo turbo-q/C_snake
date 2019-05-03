@@ -1,15 +1,8 @@
-#include<stdio.h>
 #include"Init.h"
-#include <windows.h>
-#include<stdlib.h>
-
-
-
 
 
 void main(){
-
-		//初始化
+	//初始化
 		Init();
 	
 	while(1){
@@ -25,6 +18,4 @@ void main(){
 	}
 
 	
-		
-
 }

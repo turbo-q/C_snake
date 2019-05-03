@@ -12,12 +12,6 @@
 #define MAX_SPEED 10
 #define INIT_LENTH 5 //初始长度
 
-/*********枚举定义区******************/
-enum status{
-	death=0
-
-
-};
 /*********结构体定义区****************/
 typedef struct node 
 {
@@ -49,15 +43,13 @@ typedef struct Food{
 void DrawMap();
 void createSnake();
 void createFood();
-void printSnake(int ,int );
+void printSnake();
 SnakeNode *createNode(SnakeNode *head,SnakeNode *data);
 void setColor(unsigned short ForeColor,unsigned short BackGroundColor);
 void gameOver();
 void continueGame();
 /****************************/
 SnakeNode *p;
-//设置头指针
-SnakeNode *HEAD;
 SnakeBody *b;
 SnakeFood *food;
 SnakeNode *currentNode=NULL;
@@ -190,7 +182,6 @@ void createSnake(){
 	
 	p=(SnakeNode *)malloc(sizeof(SnakeNode));
 	b=(SnakeBody *)malloc(sizeof(SnakeBody));
-	HEAD=(SnakeNode *)malloc(sizeof(SnakeNode));
 	currentNode=(SnakeNode *)malloc(sizeof(SnakeNode));//动态分配大小并返回指向改内存的指针
 
 	x=INIT_X*rand()%28+2;
@@ -291,7 +282,7 @@ void moveSnake(){
 				
 			}
 			//将x，y传入获取上一次的位置
-			printSnake(x,y);
+			printSnake();
 			
 			
 			//VC中大写S  标准C中s
@@ -334,7 +325,7 @@ again:
 }
 
 //输出链表打印蛇
-void printSnake(int x,int y){
+void printSnake(){
 SnakeNode *Node;
 int i;
 
@@ -399,7 +390,7 @@ void gameOver(){
 	system("cls");
 
     setPos(40, 12);
-    printf("        继续游戏[空格]        ");
+    printf("        重开游戏[空格]        ");
 	setPos(40, 14);
 	printf("                              ");
 	setPos(40, 16);
